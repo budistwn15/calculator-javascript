@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #a9bd7e;
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #9dd2ea;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+    width: 330px;
+    margin: 0 auto;
+}
+
+.row {
+    width: 320px;
+    float: left;
+}
+
+button {
+    outline: 0;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    border: 0;
+    color: #495069;
+    background-color: 4px;
+    width: 70px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.all-clear {
+    float: left;
+    position: relative;
+    display: block;
+    background-color: #ff9fa8;
+    margin-bottom: 15px;
+    width: 150px;
+}
+
+.operator,
+.delete {
+    background-color: #f1ff92;
+    position: relative;
+}
+
+button:hover {
+    border: 0 solid #000;
+    color: #495069;
+    background-color: #8f5fda;
+    border-radius: 4px;
+    width: 70px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px #644294;
+}
+
+.all-clear:hover {
+    width: 150px;
+    float: left;
+    display: block;
+    background-color: #f297a0;
+    margin-bottom: 15px;
+    box-shadow: 0 4px #cc7f86;
+}
+
+.operator:hover,
+.delete:hover {
+    background-color: #e7f56b;
+    box-shadow: 0 4px #b7c259;
+}
+
+.output {
+    height: 80px;
+    grid-column: 1 / -1;
+    background-color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: #ccc;
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: #000;
+    font-size: 2.5rem;
+}
