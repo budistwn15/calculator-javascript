@@ -13,48 +13,49 @@
 <body>
     <div class="container">
     <div class="output">
-      <div class="previous-operand"></div>
+      <div class="previous-operand" id="previous"></div>
       <div class="current-operand"></div>
     </div>
-    <div class="buttons">
+    <div class="buttons" id="numb">
       <div class="row">
-        <button class="all-clear">AC</button>
-        <button class="delete">DEL</button>
-        <button class="operator">/</button>
+        <button class="all-clear" id="ac" onclick="clickKeyboard()">AC</button>
+        <button class="delete" id="del">DEL</button>
+        <button class="operator" id="dis" disabled>/</button>
       </div>
 
       <div class="row">
-        <button class="number">1</button>
-        <button class="number">2</button>
-        <button class="number">3</button>
-        <button class="operator">*</button>
+        <button class="number" id="one" disabled>1</button>
+        <button class="number" id="two" disabled>2</button>
+        <button class="number" id="three" disabled>3</button>
+        <button class="operator" id="multiply" disabled>*</button>
       </div>
 
       <div class="row">
-        <button class="number">4</button>
-        <button class="number">5</button>
-        <button class="number">6</button>
-        <button class="operator">+</button>
+        <button class="number" id="four" disabled>4</button>
+        <button class="number" id="five" disabled>5</button>
+        <button class="number" id="six" disabled>6</button>
+        <button class="operator" id="sum" disabled>+</button>
       </div>
 
       <div class="row">
-        <button class="number">7</button>
-        <button class="number">8</button>
-        <button class="number">9</button>
-        <button class="operator">-</button>
+        <button class="number" id="seven" disabled>7</button>
+        <button class="number" id="eight" disabled>8</button>
+        <button class="number" id="nine" disabled>9</button>
+        <button class="operator" id="sub" disabled>-</button>
       </div>
 
       <div class="row">
-        <button class="number">0</button>
-        <button class="number">.</button>
-        <button class="operator equal-sign">=</button>
-        <button class="operator">%</button>
+        <button class="number" id="zero" disabled>0</button>
+        <button class="number" id="dot" disabled>.</button>
+        <button class="operator equal-sign" id="equal" disabled>=</button>
+        <button class="operator" id="mod" disabled>%</button>
       </div>
     </div>
 
   </div>
 
     <script type="module" src="assets/js/index.js"></script>
+    <script src="assets/js/keyboard.js"></script>
 </body>
 
 </html>
